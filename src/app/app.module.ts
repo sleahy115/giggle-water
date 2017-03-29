@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BottleListComponent } from './bottle-list/bottle-list.component';
+// import { Bottle } from './bottle.model';
 
 @NgModule({
   declarations: [
