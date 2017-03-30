@@ -4,19 +4,19 @@
   </p>
   <div class="panel panel-default">
     <ul>
-      <li *ngFor="let currentBottle of childBottleList" class="panel-heading">{{currentBottle.brand}}
-
-    <div class="well">
-      <h3>Price per bottle&nbsp;&nbsp;${{currentBottle.pricePerBottle}}</h3>
-      <h3>Price per shot&nbsp;&nbsp;${{currentBottle.pricePerShot}}</h3>
-      <h3>{{currentBottle.proof}}&nbsp;&nbsp;Proof</h3>
-      <h3>Distillery:&nbsp;&nbsp;{{currentBottle.distillery}}</h3>
-      <h3>Flavor:&nbsp;&nbsp;{{currentBottle.flavor}}</h3>
-      <h3>Type:&nbsp;&nbsp;{{currentBottle.alcoholType}}</h3>
+      <li *ngFor="let currentBottle of childBottleList" class="panel-heading" (click)="showBottleDetails(currentBottle)">{{currentBottle.brand}}
+      </li>
+    <div class="well" *ngIf="showBottle">
+      <h2>Bottle Details: {{showBottle.brand}}</h2>
+      <h3>Price per bottle&nbsp;&nbsp;${{showBottle.pricePerBottle}}</h3>
+      <h3>Price per shot&nbsp;&nbsp;${{showBottle.pricePerShot}}</h3>
+      <h3>{{showBottle.proof}}&nbsp;&nbsp;Proof</h3>
+      <h3>Distillery:&nbsp;&nbsp;{{showBottle.distillery}}</h3>
+      <h3>Flavor:&nbsp;&nbsp;{{showBottle.flavor}}</h3>
+      <h3>Type:&nbsp;&nbsp;{{showBottle.alcoholType}}</h3>
 
       <button (click)="editButtonHasBeenClicked(currentBottle)">Edit!</button>
     </div>
-      </li>
     </ul>
   </div>
 </div>

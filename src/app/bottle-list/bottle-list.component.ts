@@ -8,10 +8,17 @@ import { Bottle } from '../bottle.model';
 })
 export class BottleListComponent implements OnInit {
   @Input() childBottleList:Bottle[];
-    @Output() clickSender = new EventEmitter();
+  @Output() clickSender = new EventEmitter();
+
+  selectedBottle: Bottle = null;
+  showBottle: Bottle = null;
 
   editButtonHasBeenClicked(bottleToEdit: Bottle) {
     this.clickSender.emit(bottleToEdit);
+  }
+
+  showBottleDetails(currentBottle) {
+    this.showBottle = currentBottle;
   }
 
   constructor() { }
