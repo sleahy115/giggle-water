@@ -41,14 +41,21 @@ li {
   color: #185953;
 }
 
+/*proof*/
 .danger {
   color: #8e0b0b;
+  font-style: italic;
+  font-size: 80%;
 }
 
 .high {
   color: #db6b08;
+  font-style: italic;
+  font-size: 80%;
 }
 
 .low {
   color: #336d13;
+  font-style: italic;
+  font-size: 80%;
 }

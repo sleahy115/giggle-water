@@ -11,10 +11,9 @@
       <li *ngFor="let currentBottle of childBottleList | shotsLeft:filterByShotsLeft" class="panel-heading" (click)="showBottleDetails(currentBottle)">
 
         <span [class]="shotColor(currentBottle)">{{currentBottle.brand}}</span>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span [class]="proofColor(currentBottle)">{{currentBottle.proof}}&nbsp;&nbsp;Proof</span>
-
-
+        &nbsp;&nbsp;&nbsp;
         <span class="shots">{{currentBottle.shots}}&nbsp; shots remain&nbsp;</span>
         <button (click)="shotSold(currentBottle)" class="shotsButton">Sell a Shot</button>
       </li>

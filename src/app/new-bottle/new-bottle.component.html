@@ -3,23 +3,23 @@
   <div *ngIf="showPortal" class="new-bottle well">
     <h1>Add a new bottle</h1>
     <label for="brand">Brand</label>
-    <input #newBrand>
+    <input #newBrand class="form-control">
     <label for="pricePerBottle"> Price per bottle</label>
-    <input #newPricePerBottle>
+    <input #newPricePerBottle class="form-control">
     <label for="pricePerShot"> Price per shot</label>
-    <input #newPricePerShot>
+    <input #newPricePerShot class="form-control">
     <label for="proof"> Proof</label>
-    <input #newProof>
+    <input #newProof class="form-control">
     <label for="distillery"> Distillery </label>
-    <input #newDistillery>
+    <input #newDistillery class="form-control">
     <label for="shots"> Number of shots per bottle </label>
-    <input #newShots>
+    <input #newShots class="form-control">
     <label for="flavor"> Flavor </label>
-    <input #newFlavor>
+    <input #newFlavor class="form-control">
     <label for="color"> Color </label>
-    <input #newColor>
-    <label for="alcoholType"> alcoholType </label>
-    <input #newAlcoholType>
+    <input #newColor class="form-control">
+    <label for="alcoholType"> Alcohol Type </label>
+    <input #newAlcoholType class="form-control">
     <button (click)="submitForm(newBrand.value, newPricePerBottle.value, newPricePerShot.value, newProof.value, newDistillery.value, newShots.value, newFlavor.value, newColor.value, newAlcoholType.value)" >Add bottle</button>
     <button (click)="hideEmployeePortal()">Hide</button>
   </div>
