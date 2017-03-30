@@ -21,6 +21,10 @@ export class NewBottleComponent implements OnInit {
     this.showPortal = true;
   }
 
+  hideEmployeePortal() {
+    this.showPortal = false;
+  }
+
 
   constructor() { }
 

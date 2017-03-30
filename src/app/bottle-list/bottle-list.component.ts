@@ -21,6 +21,9 @@ export class BottleListComponent implements OnInit {
   showBottleDetails(currentBottle) {
     this.showBottle = currentBottle;
   }
+  hideBottleDetails(currentBottle) {
+    this.showBottle = null;
+  }
 
   shotSold(currentBottle) {
     for(var i =0; i<this.childBottleList.length; i++){

@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <select (change)="onChange($event.target.value)">
       <option value="allBottles" selected="selected">All Bottles</option>
-      <option value="greaterThanTen">Not needed</option>
+      <option value="greaterThanTen">Wait...</option>
       <option value="lessThanTen">Restock!!</option>
     </select>
     <ul>
@@ -21,6 +21,7 @@
       <h3>Flavor:&nbsp;&nbsp;{{showBottle.flavor}}</h3>
       <h3>Type:&nbsp;&nbsp;{{showBottle.alcoholType}}</h3>
       <button (click)="editButtonHasBeenClicked(showBottle)">Edit!</button>
+      <button (click)="hideBottleDetails(currentBottle)">Hide</button>
     </div>
     </ul>
   </div>
