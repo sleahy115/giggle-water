@@ -30,4 +30,8 @@ export class AppComponent {
   finishedEditing() {
     this.selectedBottle = null;
   }
+
+  // onChange(optionFromMenu) {
+  //   this.optionFromMenu = this.selectedBottle;
+  // }
 }

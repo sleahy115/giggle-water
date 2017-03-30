@@ -21,6 +21,7 @@ export class NewBottleComponent implements OnInit {
     this.showPortal = true;
   }
 
+
   constructor() { }
 
   ngOnInit() {
