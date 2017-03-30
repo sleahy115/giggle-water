@@ -1,18 +1,20 @@
-<p>
-  bottle-list works!
-</p>
-<div class="panel panel-default">
-  <ul>
-    <li *ngFor="let currentBottle of childBottleList" class="panel-heading">{{currentBottle.brand}}
+<div class="container">
+  <p>
+    bottle-list works!
+  </p>
+  <div class="panel panel-default">
+    <ul>
+      <li *ngFor="let currentBottle of childBottleList" class="panel-heading">{{currentBottle.brand}}
 
-  <div class="well">
-    <h3>Price per bottle&nbsp;&nbsp;${{currentBottle.pricePerBottle}}</h3>
-    <h3>Price per shot&nbsp;&nbsp;${{currentBottle.pricePerShot}}</h3>
-    <h3>{{currentBottle.proof}}&nbsp;&nbsp;Proof</h3>
-    <h3>Distillery:&nbsp;&nbsp;{{currentBottle.distillery}}</h3>
-    <h3>Flavor:&nbsp;&nbsp;{{currentBottle.flavor}}</h3>
-    <h3>Type:&nbsp;&nbsp;{{currentBottle.alcoholType}}</h3>
+    <div class="well">
+      <h3>Price per bottle&nbsp;&nbsp;${{currentBottle.pricePerBottle}}</h3>
+      <h3>Price per shot&nbsp;&nbsp;${{currentBottle.pricePerShot}}</h3>
+      <h3>{{currentBottle.proof}}&nbsp;&nbsp;Proof</h3>
+      <h3>Distillery:&nbsp;&nbsp;{{currentBottle.distillery}}</h3>
+      <h3>Flavor:&nbsp;&nbsp;{{currentBottle.flavor}}</h3>
+      <h3>Type:&nbsp;&nbsp;{{currentBottle.alcoholType}}</h3>
+    </div>
+      </li>
+    </ul>
   </div>
-    </li>
-  </ul>
 </div>

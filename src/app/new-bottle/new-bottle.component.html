@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Employee Portal</h1>
+  <div class="new-bottle">
+    <label for="brand">Brand</label>
+    <input #newBrand>
+    <label for="pricePerBottle"> Price per bottle</label>
+    <input #newPricePerBottle>
+    <label for="pricePerShot"> Price per shot</label>
+    <input #newPricePerShot>
+    <label for="proof"> Proof</label>
+    <input #newProof>
+    <label for="distillery"> Distillery </label>
+    <input #newDistillery>
+    <label for="shots"> Number of shots per bottle </label>
+    <input #newShots>
+    <label for="flavor"> Flavor </label>
+    <input #newFlavor>
+    <label for="color"> Color </label>
+    <input #newColor>
+    <label for="alcoholType"> alcoholType </label>
+    <input #newAlcoholType>
+    <button (click)="submitForm(newBrand.value, newPricePerBottle.value, newPricePerShot.value, newProof.value, newDistillery.value, newShots.value, newFlavor.value, newColor.value, newAlcoholType.value)" >Add bottle</button>
+  </div>
+</div>

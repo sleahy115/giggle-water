@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BottleListComponent } from './bottle-list/bottle-list.component';
+import { NewBottleComponent } from './new-bottle/new-bottle.component';
 // import { Bottle } from './bottle.model';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BottleListComponent
+    BottleListComponent,
+    NewBottleComponent
   ],
   imports: [
     BrowserModule,

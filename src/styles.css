@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.panel {
+  background-color: pink;
+}
+.container, body {
+  background color: teal;
+}
+h1 {
+  color: purple;
+}
+
+li {
+  color: purple;
+}
