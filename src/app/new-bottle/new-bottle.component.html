@@ -1,6 +1,7 @@
 <div class="container">
-  <h1>Employee Portal</h1>
-  <div class="new-bottle">
+  <button (click)="showEmployeePortal()">Employee Portal</button>
+  <div *ngIf="showPortal" class="new-bottle well">
+    <h1>Add a new bottle</h1>
     <label for="brand">Brand</label>
     <input #newBrand>
     <label for="pricePerBottle"> Price per bottle</label>
