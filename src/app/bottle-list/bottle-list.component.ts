@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Bottle } from '../bottle.model';
 
 @Component({
@@ -8,7 +8,11 @@ import { Bottle } from '../bottle.model';
 })
 export class BottleListComponent implements OnInit {
   @Input() childBottleList:Bottle[];
+    @Output() clickSender = new EventEmitter();
 
+  editButtonHasBeenClicked(bottleToEdit: Bottle) {
+    this.clickSender.emit(bottleToEdit);
+  }
 
   constructor() { }
 

@@ -1,0 +1,24 @@
+<div *ngIf="childSelectedBottle">
+  <h2>Edit {{childSelectedBottle.brand}}</h2>
+
+  <label>Brand</label>
+  <input [(ngModel)]="childSelectedBottle.brand">
+  <label> Price per bottle</label>
+  <input [(ngModel)]="childSelectedBottle.pricePerBottle">
+  <label> Price per shot</label>
+  <input [(ngModel)]="childSelectedBottle.pricePerShot">
+  <label> Proof</label>
+  <input [(ngModel)]="childSelectedBottle.proof">
+  <label> Distillery </label>
+  <input [(ngModel)]="childSelectedBottle.distillery">
+  <label> Number of shots per bottle </label>
+  <input [(ngModel)]="childSelectedBottle.shots">
+  <label> Flavor </label>
+  <input [(ngModel)]="childSelectedBottle.flavor">
+  <label> Color </label>
+  <input [(ngModel)]="childSelectedBottle.color">
+  <label>Alcohol Type </label>
+  <input [(ngModel)]="childSelectedBottle.alcoholType">
+
+  <button (click)="doneButtonClicked()">Done</button>
+</div>

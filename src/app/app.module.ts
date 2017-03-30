@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BottleListComponent } from './bottle-list/bottle-list.component';
 import { NewBottleComponent } from './new-bottle/new-bottle.component';
+import { EditBottleComponent } from './edit-bottle/edit-bottle.component';
 // import { Bottle } from './bottle.model';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottleListComponent,
-    NewBottleComponent
+    NewBottleComponent,
+    EditBottleComponent
   ],
   imports: [
     BrowserModule,

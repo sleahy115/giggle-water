@@ -9,6 +9,7 @@ import { Bottle } from './bottle.model';
 
 export class AppComponent {
   title = 'Giggle Water!';
+  selectedBottle = null;
 
   masterBottleList: Bottle[] = [
     new Bottle('Pinnacle', 15, 3, 40, 'Pinnacle', 34, 'Whipped Cream', 'Pink', 'Vodka'),
@@ -16,7 +17,17 @@ export class AppComponent {
     new Bottle('Monopolowa', 18, 4, 40, 'Monopolowa Portland', 34, 'None', 'White', 'Vodka')
   ];
 
+
+
   addBottle(newBottleFromChild: Bottle) {
     this.masterBottleList.push(newBottleFromChild);
+  }
+
+  editBottle(clickedBottle) {
+  this.selectedBottle = clickedBottle;
+}
+
+  finishedEditing() {
+    this.selectedBottle = null;
   }
 }

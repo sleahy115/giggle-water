@@ -1,6 +1,9 @@
 <div class="container">
   <h1 id="title">{{title}}</h1>
 
-  <app-bottle-list [childBottleList]="masterBottleList"></app-bottle-list>
+  <app-bottle-list [childBottleList]="masterBottleList" (clickSender)="editBottle($event)"></app-bottle-list>
   <app-new-bottle (newBottleSender)="addBottle($event)"></app-new-bottle>
+  <app-edit-bottle [childSelectedBottle]="selectedBottle" (doneButtonClickedSender)="finishedEditing()"></app-edit-bottle>
+  <br>
+  <br>
 </div>

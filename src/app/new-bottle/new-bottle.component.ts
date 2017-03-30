@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Bottle } from '../bottle.model';
 
 @Component({
@@ -7,6 +7,7 @@ import { Bottle } from '../bottle.model';
   styleUrls: ['./new-bottle.component.css']
 })
 export class NewBottleComponent implements OnInit {
+  @Input() childSelectedBottle: Bottle;
   @Output() newBottleSender = new EventEmitter();
 
   submitForm(brand: string,  pricePerBottle: number,  pricePerShot: number,  proof: number,  distillery: string,  shots: number,  flavor: string,  color: string,  alcoholType: string) {
