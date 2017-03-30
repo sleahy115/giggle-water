@@ -1,13 +1,30 @@
 .panel {
-  background-color: pink;
+  color: teal;
 }
 .container, body {
   background color: teal;
 }
 h1 {
-  color: purple;
+  color: teal;
 }
 
 li {
-  color: purple;
+  color: teal;
+  font-size: 2em;
+}
+
+.listHoverUnderline:hover {
+  text-decoration: underline;
+}
+
+.shots {
+  color: black;
+  font-size: 70%;
+}
+
+
+.shotsButton {
+  color: white;
+  background-color: teal;
+  font-size: 50%;
 }

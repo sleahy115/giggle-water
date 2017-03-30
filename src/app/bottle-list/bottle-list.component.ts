@@ -21,6 +21,14 @@ export class BottleListComponent implements OnInit {
     this.showBottle = currentBottle;
   }
 
+  shotSold(currentBottle) {
+    for(var i =0; i<this.childBottleList.length; i++){
+      if(this.childBottleList[i].brand === currentBottle.brand) {
+        currentBottle.shots = currentBottle.shots -1;
+      }
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

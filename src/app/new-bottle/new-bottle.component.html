@@ -1,5 +1,5 @@
 <div class="container">
-  <button (click)="showEmployeePortal()">Employee Portal</button>
+  <button (click)="showEmployeePortal()">Add a new bottle</button>
   <div *ngIf="showPortal" class="new-bottle well">
     <h1>Add a new bottle</h1>
     <label for="brand">Brand</label>
@@ -22,12 +22,3 @@
     <input #newAlcoholType>
     <button (click)="submitForm(newBrand.value, newPricePerBottle.value, newPricePerShot.value, newProof.value, newDistillery.value, newShots.value, newFlavor.value, newColor.value, newAlcoholType.value)" >Add bottle</button>
   </div>
-    <h1>Edit Bottle</h1>
-    <label>Choose a bottle to edit</label>
-    <select (change)="onChange($event.target.value)">
-     <option value="pinnacle" selected="selected">Pinnacle</option>
-     <option value="bigGin">Big Gin</option>
-     <option value="monopolowa">Monopolowa</option>
-    </select>
-    <button (click)="editButtonHasBeenClicked(showBottle)">Edit!</button>
-</div>

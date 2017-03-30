@@ -1,5 +1,7 @@
 <div class="container">
-  <h1 id="title">{{title}}</h1>
+  <div class="jumbotron">
+    <h1 id="title">{{title}}</h1>
+  </div>
 
   <app-bottle-list [childBottleList]="masterBottleList" (clickSender)="editBottle($event)"></app-bottle-list>
   <app-new-bottle (newBottleSender)="addBottle($event)"></app-new-bottle>

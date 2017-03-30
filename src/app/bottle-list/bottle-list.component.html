@@ -1,10 +1,10 @@
 <div class="container">
-  <p>
-    bottle-list works!
-  </p>
   <div class="panel panel-default">
     <ul>
-      <li *ngFor="let currentBottle of childBottleList" class="panel-heading" (click)="showBottleDetails(currentBottle)">{{currentBottle.brand}}
+      <li *ngFor="let currentBottle of childBottleList" class="panel-heading" (click)="showBottleDetails(currentBottle)">
+        <span class="listHoverUnderline">{{currentBottle.brand}}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="shots">{{currentBottle.shots}}&nbsp; shots remain&nbsp;</span>
       </li>
     <div class="well" *ngIf="showBottle">
       <h2>Bottle Details: {{showBottle.brand}}</h2>
@@ -15,6 +15,7 @@
       <h3>Flavor:&nbsp;&nbsp;{{showBottle.flavor}}</h3>
       <h3>Type:&nbsp;&nbsp;{{showBottle.alcoholType}}</h3>
       <button (click)="editButtonHasBeenClicked(showBottle)">Edit!</button>
+      <button (click)="shotSold(showBottle)" class="shotsButton">Sell a Shot</button>
     </div>
     </ul>
   </div>
