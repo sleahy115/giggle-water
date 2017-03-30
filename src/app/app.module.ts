@@ -7,14 +7,15 @@ import { AppComponent } from './app.component';
 import { BottleListComponent } from './bottle-list/bottle-list.component';
 import { NewBottleComponent } from './new-bottle/new-bottle.component';
 import { EditBottleComponent } from './edit-bottle/edit-bottle.component';
-// import { Bottle } from './bottle.model';
+import { ShotsLeftPipe } from './shots-left.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottleListComponent,
     NewBottleComponent,
-    EditBottleComponent
+    EditBottleComponent,
+    ShotsLeftPipe
   ],
   imports: [
     BrowserModule,

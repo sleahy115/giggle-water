@@ -12,6 +12,7 @@ export class BottleListComponent implements OnInit {
 
   selectedBottle: Bottle = null;
   showBottle: Bottle = null;
+  filterByShotsLeft: string ="allBottles";
 
   editButtonHasBeenClicked(bottleToEdit: Bottle) {
     this.clickSender.emit(bottleToEdit);
@@ -27,6 +28,10 @@ export class BottleListComponent implements OnInit {
         currentBottle.shots = currentBottle.shots -1;
       }
     }
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByShotsLeft = optionFromMenu;
   }
 
   constructor() { }

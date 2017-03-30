@@ -1,10 +1,16 @@
 <div class="container">
   <div class="panel panel-default">
+    <select (change)="onChange($event.target.value)">
+      <option value="allBottles" selected="selected">All Bottles</option>
+      <option value="greaterThanTen">Not needed</option>
+      <option value="lessThanTen">Restock!!</option>
+    </select>
     <ul>
-      <li *ngFor="let currentBottle of childBottleList" class="panel-heading" (click)="showBottleDetails(currentBottle)">
+      <li *ngFor="let currentBottle of childBottleList | shotsLeft:filterByShotsLeft" class="panel-heading" (click)="showBottleDetails(currentBottle)">
         <span class="listHoverUnderline">{{currentBottle.brand}}</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="shots">{{currentBottle.shots}}&nbsp; shots remain&nbsp;</span>
+        <button (click)="shotSold(currentBottle)" class="shotsButton">Sell a Shot</button>
       </li>
     <div class="well" *ngIf="showBottle">
       <h2>Bottle Details: {{showBottle.brand}}</h2>
@@ -15,7 +21,6 @@
       <h3>Flavor:&nbsp;&nbsp;{{showBottle.flavor}}</h3>
       <h3>Type:&nbsp;&nbsp;{{showBottle.alcoholType}}</h3>
       <button (click)="editButtonHasBeenClicked(showBottle)">Edit!</button>
-      <button (click)="shotSold(showBottle)" class="shotsButton">Sell a Shot</button>
     </div>
     </ul>
   </div>
