@@ -12,9 +12,10 @@ export class AppComponent {
   selectedBottle = null;
 
   masterBottleList: Bottle[] = [
-    new Bottle('Pinnacle', 15, 3, 40, 'Pinnacle', 30, 'Whipped Cream', 'Pink', 'Vodka'),
-    new Bottle('Big Gin', 25, 5, 40, 'Big Gin', 9, 'Botanical', 'Green', 'Gin'),
-    new Bottle('Monopolowa', 18, 4, 40, 'Monopolowa Portland', 32, 'None', 'White', 'Vodka')
+    new Bottle('Leopold Brothers ', 35, 8, 57, 'Leopold Brothers', 9, 'Navy Stregth', 'Green', 'Gin'),
+    new Bottle('Pinnacle', 15, 3, 80, 'Pinnacle', 30, 'Whipped Cream', 'Pink', 'Vodka'),
+    new Bottle('Big Gin', 25, 5, 80, 'Big Gin', 9, 'Botanical', 'Green', 'Gin'),
+    new Bottle('Monopolowa', 18, 4, 80, 'Monopolowa Portland', 32, 'None', 'White', 'Vodka')
   ];
 
 

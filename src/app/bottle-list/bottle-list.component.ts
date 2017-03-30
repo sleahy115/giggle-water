@@ -33,6 +33,16 @@ export class BottleListComponent implements OnInit {
     }
   }
 
+  shotColor(currentBottle) {
+    if(currentBottle.pricePerShot >= 5) {
+      return "expensive";
+    } else if (currentBottle.pricePerShot === 4) {
+      return "regular";
+    } else {
+      return "cheap";
+    }
+  }
+
   onChange(optionFromMenu) {
     this.filterByShotsLeft = optionFromMenu;
   }
