@@ -40,3 +40,15 @@ li {
 .expensive {
   color: #185953;
 }
+
+.danger {
+  color: #8e0b0b;
+}
+
+.high {
+  color: #db6b08;
+}
+
+.low {
+  color: #336d13;
+}

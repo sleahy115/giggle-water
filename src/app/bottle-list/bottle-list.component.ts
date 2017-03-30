@@ -43,6 +43,16 @@ export class BottleListComponent implements OnInit {
     }
   }
 
+  proofColor(currentBottle) {
+    if(currentBottle.proof > 115) {
+      return "danger";
+    } else if (currentBottle.proof >= 85) {
+      return "high";
+    } else {
+      return "low";
+    }
+  }
+
   onChange(optionFromMenu) {
     this.filterByShotsLeft = optionFromMenu;
   }
